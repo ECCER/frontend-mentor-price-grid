@@ -16,7 +16,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- https://your-solution-url.com
-- https://your-live-site-url.com
+- [Git Repository](https://github.com/ECCER/frontend-mentor-price-grid)
+- [Live Page](https://frontend-mentor-price-grid-rho.vercel.app/)
 
 ## My process
 
@@ -70,7 +69,7 @@ As I have no experience with grid, I will focus on learning how to implement it 
 
 ### Useful resources
 
-- [Resource 1](https://www.youtube.com/watch?v=qdec2M4NwT0) - This video helped me understand and apply grid easily and simply.
+- [Resource 1](https://www.youtube.com/watch?v=edEG0CoM5gw) - This video helped me understand and apply grid easily and simply.
 - [Resource 2](https://cssgridgarden.com/) - This is a very dynamic game to test and learn more about grid.
 
 ## Author
@@ -80,4 +79,4 @@ As I have no experience with grid, I will focus on learning how to implement it 
 
 ## Acknowledgments
 
-Thanks to the render2web channel on youtube
+Thanks to the Kiko Palomares channel on youtube

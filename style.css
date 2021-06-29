@@ -1,0 +1,163 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    min-width: 218px;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    /* padding: 1.5rem 1rem; */
+}
+
+@media (min-width: 750px) {
+    main {
+        width: 44%;
+        font-size: 16px;
+        max-width: 635px;
+        min-width: 534px;
+    }
+}
+
+.card {
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 0px 10px -6px rgba(0, 0, 0, .3);
+}
+
+@media (min-width: 750px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*Primer cuadrado*/
+
+.cuadrado {
+    padding: 1.5rem 1rem;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@media (min-width: 750px) {
+    .cuadrado {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.cuadrado:first-child {
+    background-color: white;
+    color: var(--grayish-blue);
+}
+
+@media (min-width: 750px) {
+    .cuadrado:first-child {
+        grid-column: 1 / span 2;
+    }
+    .cuadrado:first-child p {
+        margin-bottom: 1rem;
+    }
+}
+
+h1 {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cuadrado:first-child span {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+/*Segundo cuadrado*/
+
+.cuadrado:nth-child(2) {
+    background-color: var(--cyan);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+}
+
+p.precio {
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+p span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-right: .7rem;
+}
+
+.cuadrado a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    display: block;
+    text-align: center;
+    padding: 9px 0;
+    margin-top: 1.4rem;
+    border-radius: .3rem;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .3);
+}
+
+@media (min-width: 750px) {
+    .cuadrado:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cuadrado a {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*Tercer cuadrado*/
+
+.cuadrado:last-child {
+    background-color: rgb(74, 190, 189);
+}
+
+@media (min-width: 750px) {
+    .cuadrado:last-child p:last-of-type {
+        margin-bottom: 1rem;
+    }
+}
